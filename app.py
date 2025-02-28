@@ -13,7 +13,6 @@ from bokeh.models import GeoJSONDataSource, CustomJS, Slider
 from bokeh.plotting import figure, show, column
 from bokeh.io import output_notebook
 
-# output_notebook()
 TOOLTIPS = [('County', '@County')]
 transformer = Transformer.from_crs("EPSG:4326", "EPSG:3857", always_xy=True)
 
@@ -52,15 +51,12 @@ date_slider = Slider(value=2013,
                     )
 
 def callback(attr, old, new):
-    print(new)
     new_data = fetchData(data_url + str(new))
-    # print(new_data)
     geo_source.geojson = json.dumps(process_json(new_data))
 
 
 date_slider.on_change("value", callback)
 
 layout = column(date_slider, p)
-# show(layout)
 
 curdoc().add_root(layout)
