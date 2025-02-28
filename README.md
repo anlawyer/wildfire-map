@@ -4,4 +4,4 @@ This project for my Climate Systems class at Columbia shows a map of wildfires i
 
 <img width="620" alt="Screenshot 2025-02-28 at 2 36 31 PM" src="https://github.com/user-attachments/assets/0867cce7-3e66-44dd-94c0-4cf2064073e7" />
 
-The map is created using Bokeh for Python and hosted live with Heroku. I started the project in a Jupyter notebook but moved to a server-based app so that I could use the callbacks in Python. 
+The map is created using Bokeh for Python and hosted [live](https://ca-wildfires-0eb98269186d.herokuapp.com/app) with Heroku. I started the project in a Jupyter notebook but moved to a server-based app so that I could use the callbacks in Python. 
