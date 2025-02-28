@@ -20,7 +20,6 @@ def fetchData(url):
 
 # Initial data fetch with 2013 as the start date
 data = fetchData(data_url + '2013')
-print(data_url + '2013')
 
 # Handle json manipulation
 def process_json(geojson):
@@ -69,3 +68,4 @@ date_slider.on_change("value", callback)
 # Combine slider and map, render layout
 layout = column(p, date_slider)
 curdoc().add_root(layout)
+curdoc().title = "California Wildfires"
