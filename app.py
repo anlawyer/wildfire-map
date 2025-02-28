@@ -11,7 +11,6 @@ from pyproj import Transformer, transform
 
 from bokeh.models import GeoJSONDataSource, CustomJS, Slider
 from bokeh.plotting import figure, show, column
-from bokeh.io import output_notebook
 
 TOOLTIPS = [('County', '@County')]
 transformer = Transformer.from_crs("EPSG:4326", "EPSG:3857", always_xy=True)
